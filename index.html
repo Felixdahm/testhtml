@@ -23,7 +23,7 @@
                 <p id="counter">0</p>
             </font>
             <picture>
-                <img id="picture" src="cookie1.jpg" width="400px" class="center" onclick="myFunction()" />
+                <img id="picture" src="cookie1.jpg" width="350px" class="center" onclick="myFunction()" />
             </picture>
     </div>
 
@@ -48,7 +48,10 @@
             }
             if (counterval > 20) {
                 document.getElementById("picture").src = "physalis.jpg";
+            } if (counterval > 30) {
+                document.getElementById("picture").src = "burger.jpg";
             }
+
             if (counterval == 10) {
 
                 audio1.play();

@@ -1,0 +1,8 @@
+version: '3'
+services:
+    htmltest:
+        image: htmltest
+        container_name: htmltest
+        ports:
+        - 8080:80
+

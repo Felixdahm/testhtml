@@ -1,0 +1,73 @@
+<!doctype html5>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <titel>
+        <font color="blue" size="10">
+            Eatingklicker
+        </font>
+    </titel>
+</head>
+
+<body>
+    <div align="center">
+
+        <body style="background-color:black;">
+            <h1></h1>
+
+            <font size="20" color="red">
+                <p id="test">
+                    Herzlich willkomen bei Eatingklicker!
+                </p>
+                <p id="counter">0</p>
+            </font>
+            <picture>
+                <img id="picture" src="cookie1.jpg" width="400px" class="center" onclick="myFunction()" />
+            </picture>
+    </div>
+
+
+    <audio autoplay loop>
+        <source src="gametheme.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+
+        var audio1 = new Audio("gametheme.mp3");;
+
+
+        function myFunction() {
+
+            var counterval = document.getElementById("counter").innerHTML;
+
+            counterval = parseInt(counterval) + 1;
+            document.getElementById("counter").innerHTML = counterval;
+            if (counterval > 10) {
+                document.getElementById("picture").src = "pineapple2.jpg";
+            }
+            if (counterval > 20) {
+                document.getElementById("picture").src = "physalis.jpg";
+            }
+            if (counterval == 10) {
+
+                audio1.play();
+            }
+
+            if (counterval == 12) {
+                audio1.pause();
+            }
+
+
+
+            var audio = new Audio("bounce.mp3");
+
+            audio.play();
+
+
+
+        }
+    </script>
+</body>
+
+</html>
